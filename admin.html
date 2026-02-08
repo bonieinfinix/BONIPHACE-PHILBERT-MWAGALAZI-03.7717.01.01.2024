@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin - Food Ordering</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h2>Admin Panel</h2>
+    <div id="adminArea">
+      <section id="createFood">
+        <h3>Create Food</h3>
+        <form id="foodForm">
+          <input name="name" placeholder="Name" required>
+          <textarea name="description" placeholder="Description"></textarea>
+          <input name="price" type="number" placeholder="Price (TZS)" required>
+          <select name="category_id" id="catSelect"></select>
+          <input name="image" placeholder="Image URL or data URI">
+          <button type="submit">Create</button>
+        </form>
+      </section>
+      <section id="foodsList"></section>
+    </div>
+  </main>
+  <script src="js/auth.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

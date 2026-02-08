@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tanzanian Food Ordering</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Tanzanian Local Foods</h1>
+    <nav>
+      <a href="index.html">Menu</a>
+      <a href="cart.html">Cart</a>
+      <a href="login.html" id="auth-link">Login</a>
+      <a href="admin.html" id="admin-link" style="display:none;">Admin</a>
+    </nav>
+  </header>
+  <main>
+    <section id="search">
+      <input id="q" placeholder="Search dishes...">
+      <select id="category"><option value="">All categories</option></select>
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <section id="foods" class="grid"></section>
+  </main>
+  <template id="food-card">
+    <div class="card">
+      <img src="" alt="food image">
+      <h3></h3>
+      <p class="cat"></p>
+      <p class="desc"></p>
+      <p class="price"></p>
+      <div class="actions">
+        <input type="number" min="1" value="1" class="qty">
+        <button class="add">Add to cart</button>
+      </div>
+    </div>
+  </template>
+
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
